@@ -81,6 +81,16 @@ body{
     padding: 2px;
 
 }
+.box #even{
+    animation: jiggle_even 1.5s linear infinite alternate;
+    
+}
+
+.box #odd{
+    animation: jiggle_odd 1.5s linear infinite alternate;
+
+}
+
 .box p{
     
     padding:1px 25px;
@@ -95,4 +105,28 @@ body{
     padding: 13px 40px;
     border: .5px solid black;
 
+}
+@keyframes jiggle_even {
+    0%{ 
+        transform: translateX(0px);
+    }
+    50%{ 
+        transform: translateX(-1px);
+    }
+    100% {
+        transform: translateX(1px);   
+    }
+}
+
+
+@keyframes jiggle_odd {
+    0%{ 
+        transform: translateX(0px);
+    }
+    50%{ 
+        transform: translateX(1px);
+    }
+    100% {
+        transform: translateX(-1px);   
+    }
 }
