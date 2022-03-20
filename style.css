@@ -54,8 +54,20 @@ body{
     margin-left: auto;
     margin-right: auto;
     margin-top: 20px;
+    animation: spin 1.5s linear infinite alternate;
     
 }   
+
+@keyframes spin {
+    0%{ 
+        transform: translateY(0px);
+    }
+    100% {
+        transform: translateY(-15px);   
+    }
+}
+
+
 .box a{
     display: block;
     align-items: center;
